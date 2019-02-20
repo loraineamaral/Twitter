@@ -20,13 +20,15 @@
     </header>
     <main>
         <form id="textForm">
-            <textarea onkeyup="limite_textarea(this.value)" maxlength="140" id="message"></textarea>
+            <textarea onkeyup="counter(this.value)" id="message"></textarea>
         <ul id="tweets">    
         <li><p id="printedMessage"></p></li>
         </ul>
             <span id="cont">140</span>
         </form>
-        <button id="button1" disabled>TWEET</button>
+        <div id="block">
+        <button onclick="printText()" id="button1">TWEET</button>
+       </div>
     </main>
 </body>
 
