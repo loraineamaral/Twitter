@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:200,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="app.js"></script>
 </head>
 <body>
     <header>
@@ -21,15 +20,16 @@
     <main>
         <form id="textForm">
             <textarea onkeyup="counter(this.value)" id="message"></textarea>
-        <ul id="tweets">    
-        <li><p id="printedMessage"></p></li>
-        </ul>
+            <ul id="tweets">    
+                <li><p id="printedMessage"></p></li>
+            </ul>
             <span id="cont">140</span>
         </form>
         <div id="block">
-        <button onclick="printText()" id="button1">TWEET</button>
-       </div>
+            <button id="button1">TWEET</button>
+        </div>
     </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
