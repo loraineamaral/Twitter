@@ -6,7 +6,7 @@ body{
 }
 
 nav {
-    background-color: black;
+    background-color: white;
     font-family: 'Bree Serif';
     border: 3px dotted #DC227F;
     padding: 10px;
@@ -29,13 +29,13 @@ nav {
     font-size: 20px;
     text-align: center;
     padding: 5px 10px;
-    background-color: deeppink; 
+    background-color: #DC227F; 
 }
 
     h2 i{
     padding-left: 10px;
     font-size: 205x;
-    background-color: deeppink;
+    background-color: #DC227F;
     padding-right: 10px;
 }
 
@@ -58,7 +58,7 @@ main{
 .profile{
     background-image: url(./assets/back.png);
     width: 350px;
-    height: 480px;
+    height: 490px;
     margin-right:;
     border: 3px dotted #DC227F;
     display: flex;
@@ -71,19 +71,40 @@ main{
     font-size: 20px;
     font-family: 'Bree Serif';
     font-weight: 700;
+    text-align: center;  
+    margin-top: -2px;
 }
 
     .profile img{
     width: 200px;
     border: 3px solid #DC227F;
     border-radius: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
  .div2{
     font-size: 15px;
     font-family: 'Bree Serif';
+    margin-top: -20px; 
  }
+
+table th{
+    font-family: "Bree Serif";
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px;  
+    
+}
+table{
+    border: 2px dotted black;
+    background-color: #FEFF95;
+}
+ table td{
+    font-family: "Raleway";
+    font-size: 15px;
+    text-align: center;
+    
+}
 
 .tweetarea{
     background-color: white;
@@ -101,7 +122,7 @@ textarea{
     border: none;
     border-bottom: 3px solid #DC227F;
     overflow-y: hidden;
-    resize: none;     
+    resize: none;    
 }
 
 button{
@@ -141,6 +162,7 @@ span{
     font-size: 15px;
     font-weight: 700;
     padding: 10px;  
+    word-wrap: break-word;
 }
 
 .tweets p{
@@ -148,5 +170,3 @@ span{
     font-size: 12px;
     border-bottom: 1px solid #DC227F;   
 }
-
- 
