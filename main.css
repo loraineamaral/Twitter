@@ -2,56 +2,151 @@
     margin: 0;
 }
 body{
-    background-color: #E6ECF0;
+    background-color: #FEFF95;
 }
 
-header{
-    background-color: white;
+nav {
+    background-color: black;
     font-family: 'Bree Serif';
-    color: #1DA1F2;
-    padding-bottom: 30px;
-    padding-top: 10px;
+    border: 3px dotted #DC227F;
+    padding: 10px;
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     }
-header h1{
-    text-align: center;
-    padding-top: 10px;
+
+  h1{
+    font-size: 18px; 
+    color: #DC227F;
 }
 
-header i{
-    padding-left: 40px;
+      h1 i{
+    font-size: 15px;
+    padding: 10px;
+}
+
+  h2{
     font-size: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: deeppink; 
 }
- main {
-   background-color: white;
-   width: 600px;
-   height: 400px;
-   margin-left: 400px; 
-   padding-top: 40px;  
+
+    h2 i{
+    padding-left: 10px;
+    font-size: 205x;
+    background-color: deeppink;
+    padding-right: 10px;
 }
-textarea{
-    overflow: hidden;
-    width: 400px;
-    height: 50px;
+
+  h3{
+    font-size: 18px;  
+    color: #DC227F;
+}
+
+    h3 i{
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+main{
     display: flex;
-    margin-left: 50px;
-    resize: auto;
-    
+    justify-content: space-around;
 }
-main button{
-    font-family: 'Montserrat';
-    font-size:18px;
-    color: white;
-    background-color: #1DA1F2;
+
+.profile{
+    background-image: url(./assets/back.png);
+    width: 350px;
+    height: 480px;
+    margin-right:;
+    border: 3px dotted #DC227F;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .div1{
+    font-size: 20px;
+    font-family: 'Bree Serif';
+    font-weight: 700;
+}
+
+    .profile img{
+    width: 200px;
+    border: 3px solid #DC227F;
+    border-radius: 100%;
+    margin-top: 30px;
+}
+
+ .div2{
+    font-size: 15px;
+    font-family: 'Bree Serif';
+ }
+
+.tweetarea{
+    background-color: white;
+    width: 800px;
+    height: auto;
+    border: 3px dotted #DC227F;
+}
+
+textarea{
+    width: 600px;
+    height: 20px;
+    font-family: "Raleway";
+    margin-top: 35px;
+    margin-left: 90px;
     border: none;
-    border-radius: 5%; 
-    margin-left: 100px;
+    border-bottom: 3px solid #DC227F;
+    overflow-y: hidden;
+    resize: none;     
 }
-main ul{
-    list-style: none;
+
+button{
+    font-family: "Bree Serif";
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FEFF95;
+    border: 1px solid yellow;
+    margin-top: 15px;
+    margin-left: 618px;
 }
+
 span{
-    margin-left: 480px;
+    font-family: "'Bree Serif'";
+    font-size: 10px;
+    font-weight: 400;
+    background-color:#FEFF95;
+    border: 1px solid yellow;
+    padding: 8px;
+    border-radius: 5px;
 }
+
+.tweets{
+    
+    color: black;
+    padding: 25px;
+    margin-right: 65px;
+    margin-left: 60px;   
+}
+
+.tweets li{
+    list-style: none;
+    overflow-y: hidden;
+    font-family: "Raleway";
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;  
+}
+
+.tweets p{
+    padding: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid #DC227F;   
+}
+
+ 
