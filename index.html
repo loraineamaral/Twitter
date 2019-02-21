@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,11 +18,14 @@
     </header>
     <main>
         <form id="textForm">
-            <textarea onkeyup="counter(this.value)" id="message"></textarea>
-            <ul id="tweets">    
-                <li><p id="printedMessage"></p></li>
-            </ul>
+            <textarea rows="1" onkeyup="counter(this.value)" id="message" ></textarea>
             <span id="cont">140</span>
+            
+            <ul id="tweets">    
+                <!-- <li><p id="printedMessage"></p></li>
+                <li><p id="time"></p></li> -->
+            </ul>
+           
         </form>
         <div id="block">
             <button id="button1">TWEET</button>
