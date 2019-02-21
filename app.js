@@ -1,37 +1,36 @@
-document.querySelector('textarea').addEventListener('keydown', autosize);
+document.querySelector("textarea").addEventListener("keydown", autosize, counter);
 document.getElementById("button1").addEventListener("mouseover", lockbutton);
-document.getElementById("button1").addEventListener('click', printtext);
+document.getElementById("button1").addEventListener("click", printtext);
 
-function counter(valor) {
+function counter() {
   limit = 140;
-  total = valor.length;
-  rest = limit - total;
+  let userMessage = document.getElementById("message").value.length;
+  rest = limit - userMessage;
   document.getElementById("cont").innerHTML = rest;
-  let userMessage = document.getElementById("message").value;
-  if (userMessage.length <= 120) {
+  if (userMessage <= 120) {
     document.getElementById("cont").style.color = "black";
   }
-  if (userMessage.length >= 120) {
+  if (userMessage >= 120) {
     document.getElementById("cont").style.color = "orange";
   }
-  if (userMessage.length >= 130) {
-    document.getElementById('cont').style.color = 'red';
+  if (userMessage >= 130) {
+    document.getElementById("cont").style.color = "red";
   }
 }
 function autosize() {
   let el = this;
-  el.style.height = 'auto';
-  el.style.height = el.scrollHeight + 'px';
+  el.style.height = "auto";
+  el.style.height = el.scrollHeight + "px";
 }
 function lockbutton() {
-  let userMessage = document.getElementById("message").value;
-  if (userMessage.length !== 0) {
+  let userMessage = document.getElementById("message").value.length;
+  if (userMessage !== 0) {
     document.getElementById("button1").disabled = false;
   }
   else {
     document.getElementById("button1").disabled = true;
   }
-  if (userMessage.length >= 140) {
+  if (userMessage >= 141) {
     document.getElementById("button1").disabled = true;
   }
 }
@@ -49,12 +48,12 @@ function printtext() {
   document.getElementById("cont").innerHTML = limit;
 }
 function gettime() {
-  let data = new Date();
-  let hora = data.getHours().toString();
-  let min = data.getMinutes().toString();
-  if (min.length < 2) {
-    min = "0" + min;
+  let tweetDate = new Date();
+  let tweethour = tweetDate.getHours().toString();
+  let tweetMin = tweetDate.getMinutes().toString();
+  if (tweetMin.length < 2) {
+    tweetMin = "0" + tweetMin;
   }
-  let str_hora = hora + ':' + min;
-  return str_hora;
+  let printHour = tweethour + ":" + tweetMin;
+  return printHour;
 }
