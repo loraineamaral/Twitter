@@ -6,7 +6,7 @@ body{
 }
 
 nav {
-    background-color: white;
+    background-color: black;
     font-family: 'Bree Serif';
     border: 3px dotted #DC227F;
     padding: 10px;
@@ -98,6 +98,7 @@ table th{
 table{
     border: 2px dotted black;
     background-color: #FEFF95;
+    padding-bottom: 5px;
 }
  table td{
     font-family: "Raleway";
@@ -152,7 +153,9 @@ span{
     color: black;
     padding: 25px;
     margin-right: 65px;
-    margin-left: 60px;   
+    margin-left: 60px; 
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .tweets li{
@@ -163,6 +166,7 @@ span{
     font-weight: 700;
     padding: 10px;  
     word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .tweets p{
