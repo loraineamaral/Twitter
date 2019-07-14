@@ -1,124 +1,98 @@
-*{
-    margin: 0;
-}
-body{
+
+.bg-yellow {
     background-color: #FEFF95;
 }
 
-nav {
-    background-color: black;
-    font-family: "Bree Serif";
-    border: 3px dotted #DC227F;
-    padding: 10px;
-    margin-bottom: 50px;
+.bg-white {
+    background-color: white;
+}
+
+.font-style {
+   font-family: "Bree Serif";
+   color: black    
+}
+
+.dark-border {
+    border: 3px solid black;
+    border-radius: 20px; 
+}
+
+.nav-bar {
+    background-color: yellow;       
+    margin: 0px 10px 15px 10px;
     display: flex;
     justify-content: space-between;
-    }
+}
 
-  h1{
+.nav-text{
     font-size: 18px; 
-    color: #DC227F;
+    padding: 15px;
+    padding: 0px 15px 0px 15px;
 }
 
-      h1 i{
-    font-size: 15px;
-    padding: 10px;
+.icon-style {
+    padding: 0px 15px 0px 15px;
 }
 
-  h2{
-    font-size: 20px;
-    text-align: center;
-    padding: 5px 10px;
-    background-color: #DC227F; 
-    border-radius: 5px;
-}
-
-    h2 i{
-    padding-left: 10px;
-    font-size: 205x;
-    background-color: #DC227F;
-    padding-right: 10px;
-}
-
-  h3{
-    font-size: 18px;  
-    color: #DC227F;
-}
-
-    h3 i{
-    font-size: 15px;
-    padding: 10px;
-}
-
-
-main{
+.content-position {
     display: flex;
     justify-content: space-around;
 }
 
-  .profile{
+.profile {
     background-image: url(./assets/back.png);
     width: 350px;
     height: 490px;
-    margin-right:;
-    border: 3px dotted #DC227F;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
 
-    .div1{
-    font-size: 20px;
-    font-family: "Bree Serif";
+.profile-header {
+    font-size: 18px;
     font-weight: 700;
     text-align: center;  
-    margin-top: -2px;
 }
 
-    .profile img{
-    width: 200px;
+.profile-img{
+    width: 150px;
     border: 3px solid #DC227F;
     border-radius: 100%;
-    margin-top: 20px;
 }
 
-    .div2{
+.profile-main{
     font-size: 15px;
-    font-family: "Bree Serif";
     margin-top: -20px; 
- }
+}
+ 
+.table-style{
+     border: 2px dotted black;
+     background-color: #FEFF95;
+     padding-bottom: 5px;
+}
 
-    table th{
+.table-title {
     font-family: "Bree Serif";
     font-size: 15px;
     font-weight: 700;
-    padding: 5px;  
-    
+    padding: 5px;      
 }
-    table{
-    border: 2px dotted black;
-    background-color: #FEFF95;
-    padding-bottom: 5px;
-}
- table td{
+
+.table-data{
     font-family: "Raleway";
     font-size: 15px;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .tweetarea{
-    background-color: white;
     width: 800px;
     height: auto;
-    border: 3px dotted #DC227F;
 }
 
-textarea{
+.user-input {
     width: 600px;
     height: 20px;
-    font-family: "Raleway";
     margin-top: 35px;
     margin-left: 90px;
     border: none;
@@ -127,8 +101,7 @@ textarea{
     resize: none;    
 }
 
-button{
-    font-family: "Bree Serif";
+.tweet-btn {
     font-size: 15px;
     font-weight: 400;
     padding: 10px;
@@ -139,7 +112,7 @@ button{
     margin-left: 618px;
 }
 
-span{
+.counter-style {
     font-family: "Bree Serif";
     font-size: 12px;
     font-weight: 400;
@@ -149,9 +122,7 @@ span{
     border-radius: 5px;
 }
 
-.tweets{
-    
-    color: black;
+.tweets {    
     padding: 25px;
     margin-right: 65px;
     margin-left: 60px; 
@@ -159,7 +130,7 @@ span{
     flex-direction: column-reverse;
 }
 
-  .tweets li{
+.tweets li {
     list-style: none;
     overflow-y: hidden;
     font-family: "Raleway";
@@ -170,7 +141,7 @@ span{
     white-space: pre-wrap;
 }
 
-  .tweets p{
+.tweets p {
     padding: 10px;
     font-size: 12px;
     border-bottom: 1px solid #DC227F;   

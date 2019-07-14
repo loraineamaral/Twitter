@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>labTwitter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./src/main.css">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:200,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -14,53 +14,53 @@
 
 <body>
   <header>
-    <nav>
-      <h1><i class="fas fa-bars"></i>MENU</h1>
-      <h2>labTwitter<i class="fas fa-female"></i></h2>
-      <h3><i class="fas fa-times-circle"></i>SAIR</h3>
+    <nav class="nav-bar font-style dark-border">
+      <h1 class="font-style nav-text"><i class="fas fa-bars icon-style"></i>MENU</h1>
+      <h2 class="font-style nav-text">labTwitter<i class="fas fa-female icon-style"></i></h2>
+      <h3 class="font-style nav-text"><i class="fas fa-times-circle icon-style"></i>SAIR</h3>
     </nav>
   </header>
-  <main>
-    <section class="profile">
-      <div class="div1">
+  <main class="content-position">
+    <section class="profile dark-border">
+      <div class="profile-header font-style">
         <p>SEU PERFIL</p>
-        <img src="assets/profile.png" alt="profile">
+        <img class="profile-img" src="./src/assets/profile.png" alt="profile" >
         <p>Lab-girl</p>
       </div>
-      <div class="div2">
+      <div class="profile-main font-style">
         <p class="profilesec">@lab-girl</p>
         <p>Front-end student :)</p>
         <p>Laboratoria São Paulo</p>
       </div>
       <div>
-        <table>
+        <table class="table-style">
           <tr>
-            <th>Tweets</th>
-            <th>Seguindo</th>
-            <th>Seguidores</th>
+            <th class="table-title">Tweets</th>
+            <th class="table-title">Seguindo</th>
+            <th class="table-title">Seguidores</th>
           </tr>
           <tr>
-            <td>0</td>
-            <td>155</td>
-            <td>123</td>
+            <td class="table-data" id ="tweet-number">0</td>
+            <td class="table-data">155</td>
+            <td class="table-data">123</td>
           </tr>
         </table>
       </div>
     </section>
-    <section class="tweetarea">
+    <section class="tweetarea bg-white font-style dark-border">
       <div id="textform">
         <form>
-          <textarea placeholder="O que está acontecendo?" rows="1" onkeyup="counter(this.value)"
+          <textarea class="user-input font-style" placeholder="O que está acontecendo?" rows="1" onkeyup="counter(this.value)"
             id="message"></textarea>
-          <span id="cont">140</span>
+          <span class="counter-style font-style" id="cont">140</span>
         </form>
-        <div> <button id="button1">TWEET</button></div>
+        <div> <button class="tweet-btn font-style" id="button1">TWEET</button></div>
         <ul id="tweets" class="tweets">
         </ul>
       </div>
     </section>
   </main>
-  <script src="app.js"></script>
+  <script src="./src/app.js"></script>
 </body>
 
 </html>
