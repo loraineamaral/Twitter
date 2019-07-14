@@ -38,6 +38,6 @@ As exigências seguiram o seguinte fluxo de versões:
 - Adicione a hora em que o tweet foi publicado no formato de 24 horas hh:mm.
 
 
-## Demonstração: 
+## Resultado Final: 
 
-![](./src/assets/working.gif)
+![](./src/assets/ready.png)
