@@ -40,4 +40,6 @@ As exigências seguiram o seguinte fluxo de versões:
 
 ## Resultado Final: 
 
+Acesse o site aqui: https://loraineamaral.github.io/Twitter/
+
 ![](./src/assets/ready.png)
