@@ -6,7 +6,7 @@ document.querySelector("#button1").addEventListener("click", printText);
 function counter() {
   let limit = 140;
   let userMessage = document.getElementById("message").value.length;
-  rest = limit - userMessage;
+  let rest = limit - userMessage;
   document.getElementById("cont").innerHTML = rest;
   if (userMessage <= 120) {
     document.getElementById("cont").style.color = "black";
